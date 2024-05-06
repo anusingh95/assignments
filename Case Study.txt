@@ -1,0 +1,44 @@
+You have been provided a test data set of the conversation of a hypothetical villa firm Moon Villa for 3 days. The conversation is between the users and the bot. The dataset: 
+https://docs.google.com/spreadsheets/d/1_1UEs7EdcqqiwVEJahOsWQfEXkahBz-37HofJ2YZp2k/edit?usp=sharing
+
+
+**Schema**
+
+date - Self explanatory
+
+time - Self explanatory
+
+session_id - Each time the user has a conversation, there is a new session id. Same user id can have multiple session_id
+
+user_id(new) - Unique user id
+
+payload - The messages sent by the bot or the user. The strings in JSON format from bot are not sent and it is used for storing variables.
+
+is_bot - Identifier for the bot. If it is Yes, then it is sent by the Bot, if not then it is sent by the user.
+
+is_llm - If the bot uses AI/LLM to reply then it is YES or else NO (rule based reply)
+
+num_que_asked - The S. No. of the question asked in the conversation
+
+info_collection_end - If the conversation ends with all the information required then it is 1
+
+
+
+**SQL Query**
+
+1.1. Calculate the average number of questions asked per conversation for each day.
+
+1.2. Find out all the queries where the bot was not able to understand the query and assigned them to the agent. 
+
+1.3 Calculate the average number of users talking to the agent for each day.
+
+1.4 Calculate the average time of conversation with the chat bot when the required information is provided by the chat bot.
+
+1.5 Calculate the average time of conversation with the chat bot when the required information is not provided by the chat bot and the user had to communicate with the agent.
+
+
+
+Instructions:
+1. You are free to use any of the query tool.
+2. Submit you application by the EOD (May 6th, 2024).
+3. Submit your answers in a pdf document with the file name as "Full_Name.pdf"
