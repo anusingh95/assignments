@@ -1,0 +1,74 @@
+1.1 Average number of questions asked per conversation for each day:
+date
+2024-02-16    1.881451
+2024-02-17    1.817031
+2024-02-18    2.183233
+2024-02-19    2.250310
+Name: num_que_asked, dtype: float64
+
+1.2 Queries where the bot was not able to understand and assigned to the agent:
+           date            time  \
+0    2024-02-16 0 days 14:12:56   
+1    2024-02-16 0 days 14:13:30   
+2    2024-02-16 0 days 14:13:27   
+3    2024-02-16 0 days 13:56:30   
+9    2024-02-17 0 days 22:46:22   
+...         ...             ...   
+7037 2024-02-18 0 days 14:26:51   
+7040 2024-02-16 0 days 03:10:25   
+7041 2024-02-17 0 days 08:02:35   
+7042 2024-02-17 0 days 08:01:56   
+7043 2024-02-17 0 days 08:02:31   
+
+                                             session_id    user_id (new)  \
+0     aead80a7f968e9528a0ab417903c6960ec961fd3df2078...  729452469841561   
+1     aead80a7f968e9528a0ab417903c6960ec961fd3df2078...  729452469841561   
+2     aead80a7f968e9528a0ab417903c6960ec961fd3df2078...  729452469841561   
+3     aead80a7f968e9528a0ab417903c6960ec961fd3df2078...  729452469841561   
+9     f962eeaf0ff587ae1994156534db7ec6b792896684ad4e...  725719840215264   
+...                                                 ...              ...   
+7037  0ab5350e918e2ee2c0f78eea98ad405277b4c07448e31d...      25451080602   
+7040  2e2ebe8802af72122c46d7fbe2927bf971a4c4b9770de9...      25445391379   
+7041  0a45a5ddac8cbdfa394b4bae00b9d8db0faf49b89e9286...      25444646669   
+7042  0a45a5ddac8cbdfa394b4bae00b9d8db0faf49b89e9286...      25444646669   
+7043  0a45a5ddac8cbdfa394b4bae00b9d8db0faf49b89e9286...      25444646669   
+
+                                                payload is_bot is_llm  \
+0                                                  Sure     No     No   
+1     Please stay tuned. Our reservation manager wil...     No     No   
+2               So do you operate only in Goa & Udaipur     No     No   
+3                   Hello, can I get more info on this?     No     No   
+9                                                   Kon     No     No   
+...                                                 ...    ...    ...   
+7037                Hello! Can I get more info on this?     No     No   
+7040                                              Hello     No     No   
+7041  Please stay tuned. Our reservation manager wil...     No     No   
+7042                Hello! Can I get more info on this?     No     No   
+7043                                             U from     No     No   
+
+      num_que_asked  info_collection_end            datetime  
+0                 1                    0 2024-02-16 14:12:56  
+1                 2                    0 2024-02-16 14:13:30  
+2                 2                    0 2024-02-16 14:13:27  
+3                 0                    0 2024-02-16 13:56:30  
+9                 0                    0 2024-02-17 22:46:22  
+...             ...                  ...                 ...  
+7037              0                    0 2024-02-18 14:26:51  
+7040              0                    0 2024-02-16 03:10:25  
+7041              1                    0 2024-02-17 08:02:35  
+7042              0                    0 2024-02-17 08:01:56  
+7043              1                    0 2024-02-17 08:02:31  
+
+[3775 rows x 10 columns]
+
+1.3 Average number of users talking to the agent for each day:
+date
+2024-02-16    328
+2024-02-17    363
+2024-02-18    275
+2024-02-19     88
+Name: user_id (new), dtype: int64
+
+1.4 Average time of conversation with the chat bot when the required information is provided by the chat bot: 0 hours 2 minutes 25 seconds
+
+1.5 Average time of conversation with the chat bot when the required information is not provided by the chat bot and the user had to communicate with the agent: 0 hours 4 minutes 43 seconds
